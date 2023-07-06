@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homemade Greek Yogurt 👩‍🍳</title>
+    <style>
+      body {
+        background-color: #e7eaf6;
+      }
+      h1 {
+        text-align: center;
+        color: #113f67;
+        margin-top: 0;
+      }
+      h2 {
+        text-align: center;
+        color: #38598b;
+        border: 2px solid #113f67;
+        border-radius: 10px;
+        line-height: 2.5;
+        max-width: 350px;
+        margin: 20px auto;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 30px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #113f67;
+        color: #e7eaf6;
+        background: #113f67;
+        font-size: 20px;
+        padding: 20px 30px;
+        border-radius: 30px;
+        box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+      }
+      button:hover {
+        color: #113f67;
+        background: #e7eaf6;
+        cursor: pointer;
+      }
+      .content {
+        padding: 20px 30px;
+        max-width: 400px;
+        margin: 40px auto;
+        background: #fff;
+        border-radius: 10px;
+      }
+      .intro {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      .wiki {
+        color: #38598b;
+      }
+      .wiki:hover {
+        text-decoration: none;
+        color: #ffb5b5;
+      }
+      .learnMore {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>We all love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/632/original/homemade-greek-yogurt-breakfast-bowl.jpg?1673003096"
+        alt="Greek Yogurt"
+      />
+      <p class="intro">
+        Strained yogurt, Greek yogurt, yogurt cheese, sack yogurt, or kerned
+        yogurt is yogurt that has been strained to remove most of its whey,
+        resulting in a thicker consistency than normal unstrained yogurt, while
+        still preserving the distinctive sour taste of yogurt.
+      </p>
+      <div class="learnMore">
+        🍨
+        <a
+          href="https://en.wikipedia.org/wiki/Strained_yogurt"
+          alt="Wiki Link"
+          target="_blank"
+          class="wiki"
+        >
+          Learn more from Wiki</a
+        >
+      </div>
+      <button class="tryYogurt">Try this DIY Recipe🧾</button>
+    </div>
+    <script>
+      function tryIt() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert("😓 Please enter your name");
+        } else {
+          let email = prompt("What's your email address?");
+          alert(`Thank you, ${name}! Please check your email for the recipe!`);
+        }
+      }
+      let homemade = document.querySelector(".tryYogurt");
+      homemade.addEventListener("click", tryIt);
+    </script>
+  </body>
+</html>

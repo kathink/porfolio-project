@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #151d3b;
+  --secondary-color: #864879;
+  --tertiary-color: #b8405e;
+}
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/675/original/2891839.jpg?1673036703);
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+h1 {
+  color: var(--primary-color);
+}
+h3 {
+  margin-top: 10px;
+  color: var(--secondary-color);
+}
+h2 {
+  color: var(--primary-color);
+}
+h4 {
+  color: var(--tertiary-color);
+  font-size: 19px;
+}
+
+button {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: #fff;
+  color: var(--secondary-color);
+  cursor: alias;
+}
+.content {
+  max-width: 800px;
+  background-color: #eeeeee;
+  border-radius: 30px;
+}
+.vietnamese {
+  color: var(--tertiary-color);
+}
+.zodiac {
+  max-width: 50%;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.zodiac:hover {
+  opacity: 70%;
+}
+.info {
+  border: 2px dotted var(--primary-color);
+  margin: 80px 20px;
+  background: transparent;
+}
+.info:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.creator {
+  color: #3c6255;
+}
+.img-fluid:hover {
+  transform: scale(1.25);
+}

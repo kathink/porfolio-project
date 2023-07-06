@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #239f65;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2);
+}
+body {
+  margin: 100px 0;
+}
+h1 {
+  font-size: 100px;
+}
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  opacity: 0.7;
+}
+p {
+  font-size: 18px;
+}
+a:hover {
+  cursor: pointer;
+  color: #0b5f38;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+}
+.primary-link,
+.secondary-link {
+  margin: 30px 40px 30px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 20px;
+}
+.primary-link {
+  background-color: var(--primary-color);
+  color: #ffff;
+  box-shadow: var(--box-shadow);
+}
+.secondary-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.my-project:hover {
+  cursor: pointer;
+}
+.email-me {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--primary-color);
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  p,
+  h2 {
+    text-align: center;
+  }
+
+  .app-link {
+    display: block;
+    margin: auto 20px;
+    text-align: center;
+  }
+}
